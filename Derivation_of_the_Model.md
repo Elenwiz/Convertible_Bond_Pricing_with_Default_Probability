@@ -60,7 +60,7 @@ $$
 $$
 Given these two conditions, now we can represent random walks of a stock by using a binomial tree. Before we start, it should be noted that for the given time $\delta t$, the Poisson increment $\delta q_t$ may count more than one arrival. In this article, we model the event of default in the period $\delta t$ as the condition $\{  \delta q_t > 0 \} $. So, throughout every time step of the binomial tree, the probability of default $p_0$ is equal to $1 - e^{-\lambda\delta t}$. There is another point that should be mentioned in our model, which is once the stock suffers a $\theta$ percent decrease in its price after default, the binomial tree never moves further. Hence, there is an imaginary free node that states the value of the stock price after default in the structure of the binomial tree, as shown below.
 
-![Figure 1](Figures/Tree_Structure.png)
+![Figure 1](Tree_Structure.png)
 
 All the possible values of $\frac{S_{t+\delta t}}{S_t}$ along the binomial tree with time $\delta t$ are $u$, $d$, and $(1-\theta)$ with probabilities $p_u$, $p_d$, and $p_0$ ($0\le p_u,p_d,p_0 \le 1$). We can get the following equations:
 $$
